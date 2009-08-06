@@ -1,5 +1,5 @@
 %define upstream_name    common-sense
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{upst
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
 Provides: perl(common::sense)
 
 %description
@@ -43,5 +44,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
