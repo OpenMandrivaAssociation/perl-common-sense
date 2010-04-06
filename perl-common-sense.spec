@@ -1,5 +1,5 @@
 %define upstream_name    common-sense
-%define upstream_version 3.0
+%define upstream_version 3.1
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
