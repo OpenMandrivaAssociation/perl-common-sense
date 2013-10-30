@@ -1,15 +1,15 @@
 %define upstream_name    common-sense
-%define upstream_version 3.3
+%define upstream_version 3.72
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Save a tree AND a kitten, use common::sense!
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/common/common-sense-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
@@ -88,3 +88,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Jul 23 2009 cpan2dist 0.03-1mdv
 - initial mdv release, generated with cpan2dist
+
