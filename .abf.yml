@@ -1,4 +1,5 @@
 removed_sources:
   common-sense-3.3.tar.gz: 26ab5aa5d171267a8ae02c894a57d0cb0e651d15
-sources:
   common-sense-3.72.tar.gz: e678b2e6a068d407885932736ae4e3dc5768bee1
+sources:
+  common-sense-3.73.tar.gz: 114bab46ac459f399ec3c7b2ae6a0d3b42d05c7c
