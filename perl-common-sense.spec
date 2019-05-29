@@ -27,7 +27,7 @@ coders.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%autopatch -p1
+%autopatch -p0
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
