@@ -10,6 +10,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{upstream_version}.tar.gz
+Patch0:   fix-install-dir.patch
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
@@ -26,6 +27,7 @@ coders.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
+%autopatch -p1
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
@@ -38,4 +40,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %files
 %doc Changes README
 %{_mandir}/man3/*
-#{perl_vendorlib}/*
+%{perl_vendorlib}/*
