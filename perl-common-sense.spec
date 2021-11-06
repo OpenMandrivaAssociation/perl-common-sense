@@ -1,5 +1,5 @@
 %define upstream_name    common-sense
-%define upstream_version 3.74
+%define upstream_version 3.75
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -30,9 +30,6 @@ coders.
 %autopatch -p0
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
-
-%check
-%make test
 
 %install
 %make_install
