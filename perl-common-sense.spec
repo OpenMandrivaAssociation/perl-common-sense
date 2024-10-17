@@ -8,7 +8,7 @@ Release:	1
 Summary:	Save a tree AND a kitten, use common::sense!
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:   fix-install-dir.patch
 
