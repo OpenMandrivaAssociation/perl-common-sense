@@ -1,15 +1,14 @@
 %define upstream_name    common-sense
-%define upstream_version 3.75
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	3.75
 Release:	1
 
 Summary:	Save a tree AND a kitten, use common::sense!
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/pod/common::sense
+Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{version}.tar.gz
 Patch0:   fix-install-dir.patch
 
 BuildRequires:	perl-devel
@@ -24,10 +23,9 @@ two typical (or not so typical - use your common sense) specimens of Perl
 coders.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p0 -n %{upstream_name}-%{version}
 
 %build
-%autopatch -p0
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
