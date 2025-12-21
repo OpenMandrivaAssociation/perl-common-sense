@@ -11,6 +11,7 @@ Url:		https://metacpan.org/pod/common::sense
 Source0:	http://www.cpan.org/modules/by-module/common/%{upstream_name}-%{version}.tar.gz
 Patch0:   fix-install-dir.patch
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
 BuildArch:	noarch
